@@ -8,14 +8,12 @@
 
 		.blocky {
 			font-family: "Bowlby One SC", sans-serif;
-			font-weight: 400;
 			font-style: normal;
 		}
 
 	</style>
 
 	<style>
-		
 		body {
 			font-family: "Bowlby One SC", system-ui, sans-serif;
 			font-size: 20px;
@@ -33,7 +31,7 @@
 
 		#container {
 			border: 1px solid #444;
-			min-width: 999px !important;	
+			width: 999px;	
 		}
 
 		#contact {
@@ -91,10 +89,11 @@
 			padding-top: 4em;
 			padding-bottom: 4em;
 			color: white;
-			text-shadow: #333 10px 0 20px;
+			text-shadow: #333 1px 0 20px;
 		}
 
 		footer {
+			text-shadow: #999 1px 0 20px;
 			display: flex;
 			font-size: 20px;
 			flex-direction: column;
@@ -104,6 +103,7 @@
 
 		#container {
 			background-image: url('2016_Dodge_Challenger_SRT_Hellcat_1000x800.jpg');
+			
 			background-repeat: no-repeat;
 			border-radius: 15px;
 			border-width: 5px;
@@ -112,6 +112,45 @@
 		h1, h2 {
 			padding: 0;
 		}
+	</style>
+
+	<style>
+
+		@media (max-width: 1024px) {
+			body {
+				transform: scale(0.75);
+				transform-origin: top left;
+				width: 150%; /* compensate for shrinking */
+			}
+
+
+			#container {
+				margin: 0;
+			}
+		}
+
+		@media (max-width: 768px) {
+			body {
+				transform: scale(0.5);
+				transform-origin: top left;
+				width: 200%; /* compensate for shrinking */
+				margin: 0;
+				padding: 0;
+
+					
+			}
+
+			#container {
+				border: 5px solid red;
+				margin: 0;
+				padding: 0;
+
+				min-width: 500px !important;	
+
+			}
+		}
+
+
 	</style>
 	
 </head>
